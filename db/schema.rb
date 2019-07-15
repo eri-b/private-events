@@ -10,12 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_15_175057) do
+ActiveRecord::Schema.define(version: 2019_07_15_185519) do
 
   create_table "events", force: :cascade do |t|
-    t.string "name"
-    t.text "body"
-    t.datetime "date"
+    t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "creator_id"
