@@ -7,10 +7,10 @@ class EventsController < ApplicationController
   end
 
   def create
-    @event = current_user.events.build(event_params)
+    @event = current_user.created_events.build(event_params)
 
     if @event.save
-      redirect_to events_path, notice: 'Events was successfully created.'
+      redirect_to events_path, notice: 'Event was successfully created.'
     else
       #flash.now[:danger] = 'Post not saved.'
       render 'new'
@@ -18,6 +18,7 @@ class EventsController < ApplicationController
   end
 
   def show
+    @event = Event.find(params[:id])
   end
 
   def index
