@@ -4,7 +4,7 @@ Private events
 
 ## Setup
 
-`$ rails db:migrate`
+`$ rails db:migrate`  
 `$ rails db:seed`
 
 ## Features
