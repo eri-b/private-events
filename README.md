@@ -4,15 +4,15 @@ Private events
 
 ## Setup
 
-´$ rails db:migrate´
-´$ rails db:seed´
+`$ rails db:migrate`
+`$ rails db:seed`
 
 ## Features
 
-*Account creations
-*Event creation
-*Display all events (sorted by date)
-*User Profile Page
+- Account creation
+- Event creation
+- Display events (sorted by date)
+- User Profile Page
 
 
 
