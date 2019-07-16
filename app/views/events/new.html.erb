@@ -4,5 +4,8 @@
       <%= f.label :description %> <br>
       <%= f.text_field :description %> <br> <br>
 
+      <%= f.label :date %> <%= f.date_select(:date, :order => [:month, :day, :year]) %>
+
+
     <%= f.submit "Create new event" %>
 <% end %>
