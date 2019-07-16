@@ -6,3 +6,10 @@
   <li><%= event.description %></li>
   <% end %>
 </ul>
+
+<hr>
+
+<h1>Attendance</h1>
+<% @attended_events.each do |attend| %>
+  <p><%= attend.description %></p>
+<% end %>
