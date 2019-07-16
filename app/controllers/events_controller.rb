@@ -23,8 +23,13 @@ class EventsController < ApplicationController
   end
 
   def index
-    @events = Event.all
+    # @events = Event.all
+
+    @prev_events = Event.past
+    @upcoming_events = Event.upcoming
   end
+
+  private
 
   def event_params
     params.require(:event).permit(:description)
