@@ -1,7 +1,7 @@
 
 <h1>Upcoming</h1>
 <% @upcoming_events.each do |attend| %>
-  <p><%= attend.date %>: <%= attend.description %></p>
+  <p><%= attend.date %>: <%= link_to attend.description, attend %></p>
 <% end %>
 
 <hr>

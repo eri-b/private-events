@@ -6,12 +6,5 @@ class Event < ApplicationRecord
   scope :past, -> { where("date < ?", Date.today) }
   scope :upcoming, -> { where("date >= ?", Date.today) }
 
-# def self.past
-#   Event.all.where("date < ?", Date.today)
-# end
-
-# def self.upcoming
-#   Event.all.where("date >= ?", Date.today)
-# end
 
 end

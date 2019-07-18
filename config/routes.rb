@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  get 'event_middles/attend'
   resources :events, only: [:new, :create, :show, :index]
 
   root 'sessions#new'
