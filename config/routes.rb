@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   
-  get 'event_middles/attend'
   resources :events, only: [:new, :create, :show, :index]
 
   root 'sessions#new'
@@ -8,6 +7,9 @@ Rails.application.routes.draw do
   post '/login', to: 'sessions#create'
   get '/signup', to: 'users#new'
   delete '/logout', to: 'sessions#destroy'
+
+
+  resources :event_middles, only: [:post]
 
   resources :users, only: [:new, :create, :show, :index]
 end
