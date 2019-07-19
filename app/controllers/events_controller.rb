@@ -12,7 +12,6 @@ class EventsController < ApplicationController
     if @event.save
       redirect_to events_path, notice: 'Event was successfully created.'
     else
-      #flash.now[:danger] = 'Post not saved.'
       render 'new'
     end
   end
@@ -23,7 +22,6 @@ class EventsController < ApplicationController
   end
 
   def index
-    # @events = Event.all
 
     @prev_events = Event.past
     @upcoming_events = Event.upcoming

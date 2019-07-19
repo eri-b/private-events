@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get '/signup', to: 'users#new'
   delete '/logout', to: 'sessions#destroy'
 
+
   resources :users, only: [:new, :create, :show, :index]
 
   resources :event_middles, only: [:create]
