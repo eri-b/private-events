@@ -6,4 +6,5 @@ class EventMiddlesController < ApplicationController
 	  redirect_to @event
   end
 
+
 end
