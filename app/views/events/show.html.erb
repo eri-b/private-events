@@ -1,0 +1,16 @@
+<h1><%= @event.description %></h1>
+<h3>Creator: <%= @event.creator.name %></h3>
+
+
+<% if !@event.attendees.include?(current_user) %>
+  <%= form_for(current_user.event_middles.build) do |f| %>
+    <%= f.hidden_field :attended_event_id, :value => @event.id %>
+    <%= f.submit "Attend Event" %>
+  <% end %>
+<% end %>
+
+
+<h1>Attendees</h1>
+<% @attendees.each do |attendee| %>
+  <p><%= link_to attendee.name, attendee %></p>
+<% end %>

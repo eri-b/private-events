@@ -1,0 +1,12 @@
+
+<h1>Upcoming</h1>
+<% @upcoming_events.each do |attend| %>
+  <p><%= attend.date %>: <%= link_to attend.description, attend %></p>
+<% end %>
+
+<hr>
+
+<h1>Previous</h1>
+<% @prev_events.each do |attend| %>
+  <p><%= attend.date %>: <%= attend.description %></p>
+<% end %>

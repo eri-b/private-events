@@ -1,24 +1,21 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Private events
 
-Things you may want to cover:
+## Setup
 
-* Ruby version
+To seed database with data:
+`$ rails db:migrate`  
+`$ rails db:seed`
 
-* System dependencies
+## Features
 
-* Configuration
+- Account creation
+- Event creation
+- Attend events
+- Display events (sorted by date)
+- User Profile Page
 
-* Database creation
 
-* Database initialization
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Built by Eric and Marcos
